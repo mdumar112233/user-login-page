@@ -33,7 +33,7 @@
                         <span>Sign in with google</span>
                     </div>
                     <div class="check-member text-center mt-4">
-                        <span>You have an account?</span><a href="#">Log in</a>
+                        <span>You have an account?</span><button class="user-sign-in">Log in</button>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                         <span>Sign in with google</span>
                     </div>
                     <div class="check-member text-center mt-4">
-                        <span>New here?</span><a href="#">Create account</a>
+                        <span>New here?</span><button class="user-sign-up">Create account</button>
                     </div>
                 </div>
             </div>
@@ -66,8 +66,8 @@
 
 
     <script>
-        const signUpBtn = document.querySelector('.user-sign-up');
-        const signInBtn = document.querySelector('.user-sign-in');
+        const signUpBtn = document.querySelectorAll('.user-sign-up');
+        const signInBtn = document.querySelectorAll('.user-sign-in');
         
 
         signUpBtn.addEventListener('click', (e) => {
