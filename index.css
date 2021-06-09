@@ -1,0 +1,50 @@
+body{
+    background-color: #707672;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.login-page{
+    background-color: #fff;
+    width: 350px;
+    height: auto;
+    margin: 7rem auto;
+}
+form input{
+    margin: 10px;
+    border: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+    outline: 0;
+}
+::placeholder{
+    font-size: 14px;
+}
+.sign-up-btn{
+    background-color: #696969;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    padding: 6px 35px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.first-line{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.555);
+    width: 50px;
+}
+.second-line{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+    width: 50px;
+}
+.sign-in-with-google img{
+    height: 17px;
+}
+.sign-in-with-google span{
+    font-size: 15px;
+    color: rgb(88, 85, 85);
+    cursor: pointer;
+}
+.check-member{
+    font-size: 14px;
+    color: rgb(88, 85, 85);
+}
