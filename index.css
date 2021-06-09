@@ -2,13 +2,13 @@ body{
     background-color: #707672;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: auto;
 }
 .login-page{
     background-color: #fff;
     width: 350px;
     height: auto;
-    margin: 7rem auto;
+    margin: 3rem auto;
 }
 form input{
     margin: 10px;
@@ -47,4 +47,8 @@ form input{
 .check-member{
     font-size: 14px;
     color: rgb(88, 85, 85);
+}
+
+.login-section{
+    display: none;
 }
