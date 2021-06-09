@@ -70,13 +70,15 @@
         const signInBtn = document.querySelector('.user-sign-in');
         
 
-        signUpBtn.addEventListener('click', () => {
+        signUpBtn.addEventListener('click', (e) => {
             document.querySelector('.registrar-section').style.display = 'none';
             document.querySelector('.login-section').style.display = 'block';
+            e.preventDefault();
         })
-        signInBtn.addEventListener('click', () => {
+        signInBtn.addEventListener('click', (e) => {
             document.querySelector('.registrar-section').style.display = 'block';
             document.querySelector('.login-section').style.display = 'none';
+            e.preventDefault();
     })
     </script>
 </body>
