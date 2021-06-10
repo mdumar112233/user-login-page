@@ -33,7 +33,7 @@
                         <span>Sign in with google</span>
                     </div>
                     <div class="check-member text-center mt-4">
-                        <span>You have an account?</span><button class="user-sign-in">Log in</button>
+                        <span>You have an account?</span><a class="login-link" href="#">Login</a>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                         <span>Sign in with google</span>
                     </div>
                     <div class="check-member text-center mt-4">
-                        <span>New here?</span><button class="user-sign-up">Create account</button>
+                        <span>New here?</span><a class="sign-up-link" href="#">Create account</a>
                     </div>
                 </div>
             </div>
@@ -66,20 +66,39 @@
 
 
     <script>
-        const signUpBtn = document.querySelectorAll('.user-sign-up');
-        const signInBtn = document.querySelectorAll('.user-sign-in');
+        const signUpBtn = document.querySelector('.user-sign-up');
+        const signInBtn = document.querySelector('.user-sign-in');
+        const signInLink = document.querySelector('.login-link');
+        const signUpLink = document.querySelector('.sign-up-link');
+
+        const handleSignUpBtn = () => {
+            document.querySelector('.registrar-section').style.display = 'none';
+            document.querySelector('.login-section').style.display = 'block';
+        }
+        const handleSignInBtn = () => {
+            document.querySelector('.registrar-section').style.display = 'block';
+            document.querySelector('.login-section').style.display = 'none';
+        }
         
 
         signUpBtn.addEventListener('click', (e) => {
-            document.querySelector('.registrar-section').style.display = 'none';
-            document.querySelector('.login-section').style.display = 'block';
+            handleSignUpBtn();
             e.preventDefault();
         })
         signInBtn.addEventListener('click', (e) => {
-            document.querySelector('.registrar-section').style.display = 'block';
-            document.querySelector('.login-section').style.display = 'none';
+            handleSignInBtn();
             e.preventDefault();
     })
+
+    signInLink.addEventListener('click', (e) => {
+            handleSignUpBtn();
+            e.preventDefault();
+    })
+    signUpLink.addEventListener('click', (e) => {
+            handleSignInBtn();
+            e.preventDefault();
+    })
+
     </script>
 </body>
 </html>
