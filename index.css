@@ -52,3 +52,7 @@ form input{
 .registrar-section{
     display: none;
 }
+.name-error, .email-error, .pass-error{
+    color: #C62828;
+    display: none;
+}

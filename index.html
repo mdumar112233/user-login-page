@@ -17,11 +17,13 @@
                 <div class="registrar-section mt-4">
                     <h5 class="text-center">Astha IT solutions</h5>
                     <p class="text-center mt-4 font-weight-bold">Sign up</p>
-                    <form action="" class="text-center">
-                        <input type="text" placeholder="Enter your name">
-                        <input type="email" placeholder="Enter your email">
-                        <input type="password" placeholder="Enter your password">
-                        <button class="sign-up-btn user-sign-up">Sign up</button>
+                    <form action="" id="sign-up-form" class="text-center" method="GET">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" id="sign-up-email" placeholder="Enter your email" required>
+                        <div id="regis-email-error" style="color: red; font-size: 14px;"></div>
+                        <input type="password" id="sign-up-pass" placeholder="Enter your password" required>
+                        <div id="regis-pass-error" style="color: red; font-size: 14px;"></div>
+                        <input type='submit' class="sign-up-btn user-sign-up" value='Sign up'/>
                     </form>
                     <div class="divide-section d-flex justify-content-center mt-4">
                         <div class="first-line mb-2"></div>
@@ -41,10 +43,12 @@
                 <div class="login-section mt-4">
                     <h5 class="text-center">Astha IT solutions</h5>
                     <p class="text-center mt-4 font-weight-bold">Login</p>
-                    <form action="" class="text-center">
-                        <input type="email" placeholder="Enter your email">
-                        <input type="password" placeholder="Enter your password">
-                        <button class="sign-up-btn user-sign-in">Sign in</button>
+                    <form action="" id="login-form" class="text-center" method="GET">
+                        <input id="email" type="email" placeholder="Enter your email" required>
+                        <div id="email-error" style="color: red; font-size: 14px;"></div>
+                        <input id="password" type="password" placeholder="Enter your password" required>
+                        <div id="pass-error" style="color: red; font-size: 14px;"></div>
+                        <input type='submit' class="sign-up-btn user-sign-in" value='Sign in'/>
                     </form>
                     <div class="divide-section d-flex justify-content-center mt-4">
                         <div class="first-line mb-2"></div>
